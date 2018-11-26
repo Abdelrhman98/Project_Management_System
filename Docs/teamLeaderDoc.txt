@@ -1,0 +1,10 @@
+Team Leader
+----> manage employees "add - delete" (update not now) 
+	add -> con.addNewUser() "note that you will put role 1"
+	delete -> con.removeUser(id, role"1");
+
+---> assign task to employee -> con.assignTask(taskId, empId) if task already created -boolean function -if return false "this task already added before"
+			->con.addNewTask(String taskName, int projectId, employee coder, String desc, String deadLine) if you will add and assign new task 
+
+--->get finished tasks -> con.getAllFinishedTasks() --> return arrayList<task>
+			

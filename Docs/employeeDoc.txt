@@ -1,0 +1,23 @@
+Employee
+
+a.Enables employee to enter entry time and exit time to --> this set auto when login & logout
+con.login(email, password); if current user 1 set entryTime and logout the same
+
+calculate working hours over month.
+con.empSession.getMyHours() --> return int "number of hours"
+
+b. Enables employee to request vacation
+con.empSession.requestVacation(String []vacDate) --> vacDate[0] ==> "DD"
+						     VacDate[1] ==> "MM"
+						     VacDate[2] ==> "YYYY" without '/'
+
+c. Enables employee to view penalties
+con.empSession.getAllPenalties() --> return ArrayList<penalties> "check size before print"
+
+d. Enables employee to view assigned tasks to him over
+project
+con.empSession.getTasks(int projectId) --> return ArrayList<Task>
+
+e. Enables employee to check assigned task when
+finishing it
+con.empSession.getFinishedTasks() --> return ArrayList<task>

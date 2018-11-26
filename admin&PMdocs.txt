@@ -1,0 +1,15 @@
+admin functions 
+- show all projects -> con.getAllProjects()
+- add / update / delete users (add) -> con.addNewUser()
+			      (update) -> updateUser(id, fname, lname, email, password, phone, gender, address, role) -return ArrayList<String> 
+				strErr.isEmpty()--> added suc
+				else print ArrayList
+
+			      (delete) -> con.removeUser(int id, int role);
+
+project manager
+report -> con.makeReport(String report, int empId, int tlId);
+project progress -> con.getProjectProgress(int pid)
+
+
+to get notifications -> con.empSession.getNotifications(); -> return arrayList<notifications> check size before use it 
